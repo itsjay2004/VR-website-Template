@@ -218,8 +218,7 @@ footer{
     align-self: center;
     justify-content: center;
     display: flex;
-    
-    grid-column: 4/1;
+    grid-column: 2/3;
     }
     .details h1{
         font-size: 33px;
