@@ -1,0 +1,283 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(#da8938, #001043);
+    color: white;
+}
+
+nav{
+    max-height: 10vh;
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    padding: 20px 0px;
+    font-size: 20px;
+    font-family: forte;
+    color: #ef7708;
+}
+.logo:hover{
+    padding: 20px 0px;
+    font-size: 20px;
+    font-family: forte;
+    color: #ef7708;
+    cursor: pointer;
+}
+
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px 40px;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Bell MT;
+    font-weight: bold;
+}
+.links ul li a:hover{
+    text-decoration: underline;
+    color: #E91E63;
+    font-size: 20px;
+    font-family: Bell MT;
+    font-weight: bold;
+}
+
+.page{
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+
+.model{
+    overflow: hidden;
+    height: 500px;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    margin: 100px -187px 30px 20px;
+}
+
+.model img{
+    height: 500px;
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+}
+
+.pic-right{
+    transform: translate(0%,10%);
+}
+.pic-left{
+    transform: translate(0%,-10%);
+}
+.model:hover .pic-right{
+    transform: translate(0%,0%);
+}
+.model:hover .pic-left{
+    transform: translate(0%,0%);
+}
+
+.details{
+    grid-column: 2/3;
+    align-self: end;
+    margin: 0px 0px 80px 0px;
+}
+
+.details h1{
+    font-size: 27px;
+    color: #cae4fb;
+    font-family: Snap ITC;
+    text-decoration: underline;
+}
+.details h3{
+    color: #f51547;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Bodoni MT;
+}
+button{
+    height: 40px;
+    align-items: center;
+    width: 150px;
+    margin: 20px 0px;
+    font-family: forte;
+    color: #6449ea;
+    background: #e5ece5;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+button:hover{
+    height: 40px;
+    align-items: center;
+    width: 150px;
+    margin: 20px 0px;
+    font-family: forte;
+    color: #fafaff;
+    background: #170c3a;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+footer{
+    background:#03081b;
+    color: white;
+}
+.footer-content{
+    width: 90%;     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.footer-logo{
+    text-decoration: none;
+    color: #ef7717;
+    font-size: 21px;
+    font-family: -webkit-pictograph;
+}
+.footer-terms{
+    font-size: 10px;
+    font-family: cursive;
+    color: white;
+}
+.contact{
+    margin-top: 8px;
+}
+.contact button{
+    height: 27px;
+    align-items: center;
+    width: 98px;
+    margin: 8px 0px;
+    font-family: arial;
+    color: #ffffff;
+    background: #141029;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.contact button:hover{
+    height: 27px;
+    align-items: center;
+    width: 98px;
+    margin: 8px 0px;
+    font-family: arial;
+    color: #2136cc;
+    background: #e2e1e8;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.contact input{
+    height: 27px;
+    width: 203px;
+    background: none;
+    border-bottom: 2px solid white;
+    border-left: none;
+    border-top: 2px solid white;
+    border-right: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:609px){
+    .links ul li{
+        padding: 10px;
+    }
+    .details{
+        grid-row: 2/3;
+    align-self: end;
+    margin: 0px auto 80px auto;
+    display: block;
+    width: 50vh;
+    grid-column: 3/4;
+    }
+    .model{
+    overflow: hidden;
+    height: 500px;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    
+    grid-column: 4/1;
+    }
+    .details h1{
+        font-size: 33px;
+    color: #cae4fb;
+    font-family: rockwell;
+    text-decoration: underline;
+    text-align: center;
+    }
+    .details h3{
+        color: #f51547;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: arial;
+    text-align: center;
+    }
+    button{
+        margin: 20px 10px;
+        width:320px
+    }
+    button:hover{
+        margin: 20px 10px;
+        width:320px
+    }
+
+}
+
+@media(max-width:450px){
+    .links ul li {
+        padding: 5px;
+    }
+    nav{
+        max-width: 95%;
+    }
+    .details{
+        grid-column: 2/6;
+    }
+    button{
+        width: 320px;
+    }
+    button:hover{
+        width: 320px;
+    }
+}
+
+@media(max-width:330){
+    .links ul li {
+        padding: 2px;
+    }
+    nav{
+        max-width: 98%;
+    }
+    button{
+        width: 320px;
+    }
+    button:hover{
+        width: 320px;
+    }
+}
