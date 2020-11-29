@@ -257,7 +257,7 @@ footer{
         grid-column: 2/6;
     }
     button{
-        width: 320px;
+            margin: 16px 0px 20px 0px;
     }
     button:hover{
         width: 320px;
