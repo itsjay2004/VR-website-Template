@@ -262,6 +262,9 @@ footer{
     button:hover{
         width: 320px;
     }
+    .contact button{
+        margin-left: 105px;
+    }
 }
 
 @media(max-width:330){
