@@ -200,9 +200,6 @@ footer{
 
 
 
-
-
-
 @media(max-width:609px){
     .links ul li{
         padding: 10px;
@@ -245,6 +242,9 @@ footer{
     button:hover{
         margin: 20px 10px;
         width:320px
+    }
+    footer{
+        width:100%;
     }
 
 }
